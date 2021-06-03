@@ -35,6 +35,8 @@ oc create route passthrough route-staging --service=tls-apic-drajnoha-openresty 
 Create application using the created selfmanaged apicast.
 Send an unsecured request.
 Observe 503 response and error in the apicast logs.
+The 503 is present when the apicast is trying to load the service configuration.
+When these are cached, the error is not there.
  
 ````
 curl -k  "https://drajnoha-openresty-tls.<WILDCARD_DOMAIN>:443/?user_key=726f15188b8837bcf4b5458de3633062"
