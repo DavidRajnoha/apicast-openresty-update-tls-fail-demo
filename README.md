@@ -39,5 +39,5 @@ The 503 is present when the apicast is trying to load the service configuration.
 When these are cached, the error is not there.
  
 ````
-curl -k  "https://drajnoha-openresty-tls.<WILDCARD_DOMAIN>:443/?user_key=726f15188b8837bcf4b5458de3633062"
+curl -k  "https://drajnoha-openresty-tls.<WILDCARD_DOMAIN>:443/?user_key=<APP_USER_KEY>"
 ````
